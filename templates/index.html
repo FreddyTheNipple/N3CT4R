@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Company</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_index.css') }}">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="header-content">
+			<h1>Welcome to N3CT4R-CORP</h1>
+			<p>We are a leading provider of solutions for businesses of all sizes. Our team of experts is dedicated to helping your company succeed.</p>
+			<a href="#" class="btn btn-primary">Learn More</a>
+		</div>
+	</header>
+
+	<main>
+		<section class="about" id="about">
+			<div class="container">
+				<h2>About Us</h2>
+				<p>My Company was founded in 1995 with the goal of helping businesses succeed in the digital age. Since then, we have grown into a team of over 100 professionals with expertise in web design, development, marketing, and more.</p>
+				<p>Our mission is to provide high-quality solutions that help our clients achieve their goals. We believe in building long-term relationships with our clients and providing ongoing support to help them succeed.</p>
+			</div>
+		</section>
+
+		<section class="services" id="services">
+			<div class="container">
+				<h2>Our Services</h2>
+				<p>At My Company, we offer a wide range of services to help businesses succeed online:</p>
+				<ul>
+					<li>Web Design</li>
+					<li>Web Development</li>
+					<li>Digital Marketing</li>
+					<li>Search Engine Optimization</li>
+					<li>Social Media Management</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="blog" id="blog">
+			<div class="container">
+				<h2>Latest News</h2>
+				<div class="blog-posts">
+					<div class="blog-post">
+						<h3>How to Build a Successful Online Store</h3>
+						<p>Building an online store can be a daunting task, but with the right tools and strategies, you can create a successful ecommerce business. In this post, we share our top tips for building an online store that drives sales and growth.</p>
+					</div>
+					<div class="blog-post">
+						<h3>The Benefits of Responsive Web Design</h3>
+						<p>Responsive web design is a must-have for any modern website. In this post, we explore the benefits of responsive design and why it is important for businesses of all sizes.</p>
+					</div>
+					<div class="blog-post">
+						<h3>Why Your Website Needs an SSL Certificate</h3>
+						<p>Securing your website with an SSL certificate is essential for protecting your customers' sensitive data and improving your search engine rankings. In this post, we explain why SSL is important and how to get started.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 N3CT4R-CORP. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
