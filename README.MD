@@ -10,7 +10,7 @@
 '--'    '--'  `-..__.-'     `._____.'    '---'         '-'  ''-'   `'-'  
 ```
 
-N3CT4R is a web honeypot tool designed to track and log all incoming requests, login attempts with credentials, and command execution on a fake/mock router dashboard. Soon I plan on adding XSS and SQL injection attacks. By monitoring and recording these types of attacks, N3CT4R provides valuable insight into potential vulnerabilities in a website or web application, allowing for proactive security measures to be taken to prevent future attacks.
+N3CT4R is a very early stage web honeypot tool designed to track and log all incoming requests, login attempts with credentials, and command execution on a fake/mock router dashboard.
 
 **To run:**
 ```
