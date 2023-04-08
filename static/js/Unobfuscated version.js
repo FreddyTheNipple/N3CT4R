@@ -1,3 +1,38 @@
+/*
+,---.   .--.   .-'''-.       _______ ,---------.     ,---.  .-------.     
+|    \  |  |  /   _   \     /   __  \\          \   /,--.|  |  _ _   \    
+|  ,  \ |  | |__/` '.  |   | ,_/  \__)`--.  ,---'  //_  ||  | ( ' )  |    
+|  |\_ \|  |    .--'  /  ,-./  )         |   \    /_( )_||  |(_ o _) /    
+|  _( )_\  | ___'--._ _\ \  '_ '`)       :_ _:   /(_ o _)|  | (_,_).' __  
+| (_ o _)  ||   |  ( ` )  > (_)  )  __   (_I_)  / /(_,_)||_ |  |\ \  |  | 
+|  (_,_)\  ||   `-(_{;}_)(  .  .-'_/  ) (_(=)_)/  `-----' |||  | \ `'   / 
+|  |    |  | \     (_,_)  `-'`-'     /   (_I_) `-------|||-'|  |  \    /  
+'--'    '--'  `-..__.-'     `._____.'    '---'         '-'  ''-'   `'-'   
+
+INFO: This is the unobfuscated version of the javascript. Since it's very obvious that the command execution is fake
+I recommend obfuscating the code using https://obfuscator.io/
+*/
+
+const inputs = document.querySelectorAll(".input");
+
+function addcl(){
+	let parent = this.parentNode.parentNode;
+	parent.classList.add("focus");
+}
+
+function remcl(){
+	let parent = this.parentNode.parentNode;
+	if(this.value == ""){
+		parent.classList.remove("focus");
+	}
+}
+
+
+inputs.forEach(input => {
+	input.addEventListener("focus", addcl);
+	input.addEventListener("blur", remcl);
+});
+
 
 let commandInput = document.getElementById("command");
 		commandInput.addEventListener("keydown", function(event) {

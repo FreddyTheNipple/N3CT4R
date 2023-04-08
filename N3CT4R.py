@@ -20,7 +20,7 @@ def log_request():
         'password': request.form.get('password', ''),
         'command': request.form.get('command', '')
     }
-    with open('honeypot_log.json', 'a') as log_file:
+    with open('N3CT4R_logs.json', 'a') as log_file:
         log_file.write(json.dumps(data) + '\n')
 
 # Route for the home page
