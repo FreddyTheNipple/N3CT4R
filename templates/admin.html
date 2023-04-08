@@ -6,7 +6,7 @@
 </head>
 <body>
 	<header>
-		<h1>CORP Router Configuration</h1>
+		<h1>N3CT4R Router Dashboard</h1>
 		<div class="command-box">
 			<form method="POST" action="{{ url_for('exec') }}" id="form">
 				<input type="text" name="command" id="command" placeholder="Enter command" type="text">
@@ -20,8 +20,29 @@
 			<p id="status">Connected</p>
 		</section>
 		<section class="network-traffic">
-			<h2>Network Traffic</h2>
-			<img src="{{ url_for('static', filename='img/traffic.webp') }}" id="traffic">			
+			<h2>Router Traffic Monitor</h2>
+			<div class="traffic-stats">
+				<div class="traffic-row">
+					<div class="traffic-label">Total Traffic:</div>
+					<div class="traffic-value">45 GB</div>
+				</div>
+				<div class="traffic-row">
+					<div class="traffic-label">Peak Traffic:</div>
+					<div class="traffic-value">5.2 GB/s</div>
+				</div>
+				<div class="traffic-row">
+					<div class="traffic-label">Average Traffic:</div>
+					<div class="traffic-value">2.4 GB/s</div>
+				</div>
+				<div class="traffic-row">
+					<div class="traffic-label">Online Devices:</div>
+					<div class="traffic-value">23</div>
+				</div>
+			</div>
+			<div class="traffic-chart">
+				<h3>24 Hour Traffic Data</h3>
+				<img src="{{ url_for('static', filename='img/traffic.webp') }}">
+			</div>
 		</section>
 		<section class="settings">
 			<h2>Settings</h2>

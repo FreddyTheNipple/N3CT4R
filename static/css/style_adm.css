@@ -111,3 +111,55 @@ canvas {
 .options-container input[type="radio"] {
   margin-right: 5px;
 }
+
+.dashboard {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+  }
+  
+  .traffic-stats {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .traffic-row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .traffic-label {
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 10px;
+  }
+  
+  .traffic-value {
+	font-size: 18px;
+	font-weight: bold;
+  }
+  
+  .traffic-chart {
+	margin-top: 20px;
+	text-align: center;
+  }
+  
+  .traffic-chart h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .traffic-chart img {
+	max-width: 100%;
+	height: auto;
+  }
