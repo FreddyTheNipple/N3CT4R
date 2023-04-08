@@ -12,6 +12,14 @@
 
 N3CT4R is a very early stage web honeypot tool designed to track and log all incoming requests, login attempts with credentials, and command execution on a fake/mock router dashboard.
 
+**requirements:**
+- python3
+    - https://www.python.org/downloads/ or `apt install python3`
+- pip3
+    - `apt install python3-pip`
+- flask
+    - `pip3 install -m flask`
+
 **To run:**
 ```
 python3 .\N3CT4R.py
